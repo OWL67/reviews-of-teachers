@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставить отзыв</title>
+    <link rel="stylesheet" href="stylesRF.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="review-form">
+        <h2>Оставить отзыв</h2>
+        <form id="reviewForm">
+            <label for="teacher">Преподаватель:</label>
+            <input type="text" id="teacher" name="teacher" readonly>
+
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+            <label for="rating">Оценка:</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Выберите оценку</option>
+                <option value="5">Отлично (5)</option>
+                <option value="4">Хорошо (4)</option>
+                <option value="3">Удовлетворительно (3)</option>
+                <option value="2">Плохо (2)</option>
+                <option value="1">Очень плохо (1)</option>
+            </select>
+
+            <label for="review">Ваш отзыв:</label>
+            <textarea id="review" name="review" placeholder="Напишите ваш отзыв здесь" required></textarea>
+
+            <button type="submit">Отправить отзыв</button>
+        </form>
+        <div id="confirmation" style="display:none;">
+            <p>Ваш отзыв был успешно отправлен! Спасибо за ваш вклад.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы на преподавателей</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="zag">
+                <h1>Отзывы на преподавателей</h1>
+                <p>Этот сайт сделан с целью оценки образовательного процесса у преподавателей СПК (Северский Промышленный Колледж)</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Поддержать</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="catalog" class="catalog">
+            <div class="product-card">
+                <img src="media/teacher1.jpg" alt="Фото преподавателя">
+                <h3>Иванов Иван Иванович</h3>
+                <p id="opisanie">Описание для преподавателя</p>
+                <p class="rating">Рейтинг: <span>4.5</span></p>
+                <button onclick="navigateToReviewForm('Иванов Иван Иванович')">Оставить отзыв</button>
+                <button onclick="showDetails('Иванов Иван Иванович')">Показать комментарии</button>
+                <div class="comments" id="comments-Иванов Иван Иванович" style="display:none;">
+                    <p>Комментарий 1: Отличный преподаватель!</p>
+                    <p>Комментарий 2: Очень понятно объясняет материал.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="media/teacher1.jpg" alt="Фото преподавателя">
+                <h3>Иванов Еван Иванович</h3>
+                <p id="opisanie">Описание для преподавателя</p>
+                <p class="rating">Рейтинг: <span>4.4</span></p>
+                <button onclick="navigateToReviewForm('Иванов Еван Иванович')">Оставить отзыв</button>
+                <button onclick="showDetails('Иванов Еван Иванович')">Показать комментарии</button>
+                <div class="comments" id="comments-Иванов Еван Иванович" style="display:none;">
+                    <p>Комментарий 1: Отличный преподаватель!</p>
+                    <p>Комментарий 2: Очень понятно объясняет материал.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Отзывы на преподавателей СПК. Все права защищены.</p>
+            <ul class="footer-links">
+                <li><a href="cpt.html">Контакты</a></li>
+                <li><a href="cpt.html">Политика конфиденциальности</a></li>
+                <li><a href="cpt.html">Условия использования</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
